@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "208133681681",
+    "project_id": "fir-authentication-task-ae864",
+    "storage_bucket": "fir-authentication-task-ae864.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:208133681681:android:ccf9df65aa6df027faf7b0",
+        "android_client_info": {
+          "package_name": "com.app_firebase_task.firebase_authentication_task"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "208133681681-3npn9tfijvv6j0c2krqreaqueplotu7e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCIjsUzKsqRpmnqeem76dVzGz1kf9cl7xM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "208133681681-3npn9tfijvv6j0c2krqreaqueplotu7e.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "208133681681-o9t59m29igh8i9f6hbo6k6krtq8b18u7.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.appfirebasetask.firebaseAuthenticationTask"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
