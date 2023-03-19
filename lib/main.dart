@@ -1,7 +1,11 @@
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_authentication_task/screens/email_pass_auth_screens/email_pass_home_page.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'firebase_options.dart';
-import 'home_screen.dart';
+import 'screens/email_pass_auth_screens/ragistration_screen.dart';
+import 'screens/email_pass_auth_screens/sing_up_email_pass_screen.dart';
+import 'screens/google_auth_screens/home_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -21,7 +25,21 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const HomeScreen(),
+      //================================= GOOGLE AUTH SCREEN============================
+      // home: const HomeScreen(),
+      //================================= Email Pass SCREEN============================
+      // home: const RegisterScreen(),
+      // home: const LoginScreen(),
+      home: StreamBuilder(
+        stream: FirebaseAuth.instance.authStateChanges(),
+        builder: (context, snapshot) {
+          if (snapshot.hasData) {
+            return HomePage();
+          } else {
+            return const LoginScreen();
+          }
+        },
+      ),
     );
   }
 }
